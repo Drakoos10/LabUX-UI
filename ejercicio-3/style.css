@@ -11,6 +11,40 @@
     --color-texto: #1a1f2a;
 }
 
+img{
+    width: 100%;
+    
+}
+
+.boton-vermas{
+  display: inline-block; 
+  padding: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  transition: all ease-in-out 0.3s; 
+  border-radius: 3px;
+  background-color: var(--color-principal);
+  margin-top: 10px;
+}
+.boton-vermas:hover{
+   transform: scale(1.1);
+   
+}
+
+h3{
+font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 19px;
+  color: var(--color-principal);
+
+}
 .titulo-principal{
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -23,12 +57,17 @@
 .titulo-secundario{
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 700;
   font-style: normal;
-  font-size: 22px;
+  font-size: 27px;
   color: var(--color-principal);
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+  padding: 10px;
+  text-align: center;
 }
-.parrafo{
+p{
 
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -39,10 +78,8 @@
 }
 
 #cabecera-principal{
-    
     padding-bottom: 20px 2% 20px 2%;
     display: flex ;
-    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     border-bottom: 3px solid var(--color-principal);
@@ -63,7 +100,7 @@
 
 
 }
-.contenido{
+.elements-row{
     display: flex;
     justify-content: center;
     justify-content: space-around   ;
@@ -72,9 +109,33 @@
 
 
 }
-nav[role=navigation]{
+
+
+.articulo-index{
+    padding: 20px;
+
+}
+
+#area-multimedia{
+   background: linear-gradient(rgba(255, 255, 255, 1), rgba(8, 29, 84, 0.6), rgba(8, 29, 84, 1)), 
+                url('assets/obelisco.jpeg') center/cover no-repeat;
+    background-size: 100%;
+    padding: 100px;
+}
+#area-multimedia video{
+    margin: auto;
+    padding-top: 40px;
+}
+
+#destacados-semana{
+
+    background-color: rgba(8, 29, 84, 1);
+    background-size: 100%;
+}
+video{
     width: 96%;
-    
+    display: flex;
+    justify-content: center;
 }
 
 .texto-oculto{
@@ -88,17 +149,28 @@ nav[role=navigation]{
     #cabecera-principal{
     flex-direction: column;
        }
-
+nav[role=navigation]{
+    width: 96%;
+}
     .boton-principal{
 
         display: block;
         width: 96%;
         margin: 5px 2% 5px 2%;
         text-align: center;
-        border-bottom: 1px solid var(--color-principal);
+      
         border-radius: 0;
     }
-}
 
+    .elements-row {
+        flex-direction: column; 
+        align-items: center;   
+    }
+
+    #area-multimedia{
+        background-color: rgba(8, 29, 84, 1);
+        background-image: none;
+    }
+}
 
 
